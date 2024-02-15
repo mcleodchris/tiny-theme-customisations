@@ -1138,7 +1138,7 @@ h6 a:hover {
   background-color: var(--color-fg);
   border-radius: var(--border-radius);
   color: var(--color-bg);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
   max-inline-size: unset;
   padding: var(--space-m-l);
 }
@@ -1154,4 +1154,8 @@ section.footnotes ol {
 }
 hr::before {
   color: var(--color-fg);
+}
+.h-entry {
+  padding-block-end: var(--region-space-bottom, var(--space-m-l));
+  padding-block-start: var(--region-space-top, var(--space-m-l));
 }
