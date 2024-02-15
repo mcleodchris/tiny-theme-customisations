@@ -1114,3 +1114,44 @@ h5 a:hover,
 h6 a:hover {
   text-decoration: underline;
 }
+.h-entry h1 {
+  font-size: var(--size-step-4);
+}
+.h-entry h2 {
+  font-size: var(--size-step-3);
+}
+.h-entry h3 {
+  font-size: var(--size-step-2);
+}
+.h-entry img {
+  block-size: auto;
+  max-inline-size: var(--max-img-width, 100%);
+}
+.h-entry .post-meta {
+  font-size: var(--size-step-0);
+}
+.h-entry .post-meta a.u-url {
+  text-decoration: none;
+}
+.h-entry footer {
+  --flow-space: var(--space-s-m);
+  background-color: var(--color-fg);
+  border-radius: var(--border-radius);
+  color: var(--color-bg);
+  font-size: var(--size-step-1);
+  max-inline-size: unset;
+  padding: var(--space-m-l);
+}
+section.footnotes {
+  font-size: var(--size-step-0);
+}
+section.footnotes ol {
+  padding-inline-start: var(--space-s);
+}
+.e-content img + p:first-of-type,
+.e-content figure + p:first-of-type {
+  margin-top: var(--flow-space, 1em);
+}
+hr::before {
+  color: var(--color-fg);
+}
