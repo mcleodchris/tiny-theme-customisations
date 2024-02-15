@@ -1175,5 +1175,9 @@ hr::before {
 .e-content a:hover {
   text-decoration: none;
 }
-
+blockquote:not([class]),
+li,
+p {
+  max-inline-size: 55ch;
+}
 /*************************************/
