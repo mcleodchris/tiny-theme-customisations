@@ -159,3 +159,25 @@ h3 {
     --link: #f4f7f5;
   }
 }
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-s);
+  line-height: 1;
+}
+h1,
+h2,
+h3 {
+  max-inline-size: 20ch;
+}
+h1 {
+  font-size: var(--size-step-5);
+}
+h2 {
+  font-size: var(--size-step-3);
+}
+h3 {
+  font-size: var(--size-step-2);
+}
