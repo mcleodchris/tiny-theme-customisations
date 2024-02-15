@@ -41,3 +41,123 @@
 }
 
 /************************************/
+
+body {
+  font-family: var(--font-base);
+  max-inline-size: var(--wrapper-max-width, 85rem);
+  text-rendering: optimizeSpeed;
+  font-size: var(--size-step-1);
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2em;
+}
+.site-footer {
+  --link: #2b2926;
+}
+.e-content {
+  --flow-space: var(--space-m-l);
+  --wrapper-max-width: 55rem;
+}
+.e-content > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+.h-entry :is(h2, h3, h4) + * {
+  --flow-space: var(--space-s-m);
+}
+.post-date {
+  font-size: var(--size-step-0);
+}
+
+/* Light Mode */
+:root {
+  --color-dark: #2b2926;
+  --color-light: #f4f7f5;
+  --color-light-glare: #fff;
+  --color-primary: #d81e5b;
+  --color-primary-glare: #e43a72;
+  --color-secondary: #00487c;
+  --color-secondary-glare: #1d4e89;
+  --color-inverse-light: #2b2926;
+  --color-inverse-dark: #181920;
+  --color-inverse-dark-glare: #272934;
+  --color-inverse-light-glare: #fff;
+  --color-inverse-primary: #3bb0a5;
+  --color-inverse-primary-glare: #54fcec;
+  --color-inverse-secondary: #6021e0;
+  --color-inverse-secondary-glare: #8a25ff;
+
+  --wrapper-max-width: 55rem;
+  --space-2xs: clamp(0.5rem, 0.46rem + 0.19vw, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.69rem + 0.29vw, 0.9375rem);
+  --space-s: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+  --space-m: clamp(2rem, 1.84rem + 0.78vw, 2.5rem);
+  --space-l: clamp(3rem, 2.77rem + 1.17vw, 3.75rem);
+  --space-xl: clamp(5rem, 4.61rem + 1.94vw, 6.25rem);
+  --space-2xl: clamp(8rem, 7.38rem + 3.11vw, 10rem);
+  --space-3xl: clamp(13rem, 11.99rem + 5.05vw, 16.25rem);
+  --space-xs-s: clamp(0.75rem, 0.59rem + 0.78vw, 1.25rem);
+  --space-s-m: clamp(1rem, 0.73rem + 1.36vw, 1.875rem);
+  --space-m-l: clamp(1.5rem, 1.19rem + 1.55vw, 2.5rem);
+  --space-l-xl: clamp(2rem, 1.46rem + 2.72vw, 3.75rem);
+  --space-l-2xl: clamp(2rem, 1.07rem + 4.66vw, 5rem);
+  --space-xl-2xl: clamp(3rem, 2.38rem + 3.11vw, 5rem);
+  --space-2xl-3xl: clamp(4rem, 2.91rem + 5.44vw, 7.5rem);
+  --size-step-min-1: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --size-step-0: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+  --size-step-1: clamp(1.1875rem, 1.01rem + 0.87vw, 1.75rem);
+  --size-step-2: clamp(1.4375rem, 1.11rem + 1.65vw, 2.5rem);
+  --size-step-3: clamp(1.75rem, 1.19rem + 2.82vw, 3.5625rem);
+  --size-step-4: clamp(2.0625rem, 1.15rem + 4.56vw, 5rem);
+  --size-step-5: clamp(2.5rem, 1.08rem + 7.09vw, 7.0625rem);
+  --size-step-6: clamp(3rem, 0.84rem + 10.78vw, 9.9375rem);
+  --font-display: Redhat, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  --font-base: Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  --font-mono: RobotoMono, monospace;
+  --gutter: var(--space-s-m);
+  --border-radius: 0.5rem;
+  --transition-base: 250ms ease;
+  --transition-movement: 200ms linear;
+  --transition-fade: 200ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5);
+  --tracking: -0.05ch;
+  --tracking-s: -0.075ch;
+  --color-bg: var(--color-light);
+  --color-fg: var(--color-dark);
+  --sparkle: conic-gradient(
+    var(--color-primary) 0 33%,
+    var(--color-secondary) 0 55%,
+    var(--color-inverse-primary) 0 70%,
+    var(--color-inverse-secondary) 0 87%,
+    var(--color-secondary-glare) 0 100%
+  );
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-dark: #2b2926;
+    --color-light: #f4f7f5;
+    --color-light-glare: #fff;
+    --color-primary: #d81e5b;
+    --color-primary-glare: #e43a72;
+    --color-secondary: #00487c;
+    --color-secondary-glare: #1d4e89;
+    --color-inverse-light: #2b2926;
+    --color-inverse-dark: #181920;
+    --color-inverse-dark-glare: #272934;
+    --color-inverse-light-glare: #fff;
+    --color-inverse-primary: #3bb0a5;
+    --color-inverse-primary-glare: #54fcec;
+    --color-inverse-secondary: #6021e0;
+    --color-inverse-secondary-glare: #8a25ff;
+    --color-bg: var(--color-dark);
+    --color-fg: var(--color-light);
+  }
+  .site-footer {
+    --link: #f4f7f5;
+  }
+}
