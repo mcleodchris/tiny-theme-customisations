@@ -1,3 +1,4 @@
+{{ if strings.Contains .Site.BaseURL "worldsinminiature.com" }}
 <a href="/">
   <img
     src="https://worldsinminiature.com/uploads/2024/g5256-300x300.png"
@@ -7,3 +8,14 @@
     class="u-photo"
   />
 </a>
+{{ else }}
+<a href="/">
+  <img
+    src="https://micro.chrismcleod.dev/uploads/2024/favicon.png"
+    width="80"
+    height="80"
+    alt="the site logo, which resembes a stylised, angular explosion."
+    class="u-photo"
+  />
+</a>
+{{ end }}
