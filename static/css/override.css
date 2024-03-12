@@ -491,3 +491,10 @@ li,
 p {
   max-inline-size: 55ch;
 }
+.blogroll li a {
+    color: var(--color-fg);
+}
+.blogroll li a span {
+    font-size: var(--size-step-0);
+    color: var(--color-primary);
+}
